@@ -37,6 +37,7 @@ export default function useFetchJobs(params, page) {
         params: { markdown: true, page: page, ...params },
       })
       .then((res) => {
+        console.log(res.data);
         dispatch({ type: ACTIONS.GET_DATA, payload: { jobs: res.data } });
       })
       .catch((e) => {

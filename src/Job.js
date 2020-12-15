@@ -4,7 +4,7 @@ import { Card } from "react-bootstrap";
 const Job = ({ job }) => {
   return (
     <Card>
-      <Card.body>
+      <Card.Body>
         <div className="d-flex justify-content-between">
           <div>
             <Card.Title>
@@ -15,7 +15,7 @@ const Job = ({ job }) => {
             </Card.Title>
           </div>
         </div>
-      </Card.body>
+      </Card.Body>
     </Card>
   );
 };
