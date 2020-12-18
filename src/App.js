@@ -9,7 +9,8 @@ function App() {
   const { jobs, loading, error } = useFetchJobs();
 
   return (
-    <Container>
+    <Container className="my-4">
+      <h1 className="my-4">Github Jobs</h1>
       {loading && <h1>Loading...</h1>}
       {error && <h1>there was an error</h1>}
       {jobs.map((job) => {
